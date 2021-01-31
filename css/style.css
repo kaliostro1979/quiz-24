@@ -1,0 +1,796 @@
+@import "fonts.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-image: url("../images/bgr-2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+p {
+    margin: 0;
+}
+
+a, a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+
+#main {
+    max-width: 1213px;
+    margin: 0 auto;
+    padding-top: 42px;
+    padding-left: 23px;
+    position: relative;
+    overflow: hidden;
+}
+
+/*Header*/
+
+.top__header, .top__header-logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top__header {
+    margin-bottom: 23px;
+}
+
+.top__header-logo {
+    width: 274px;
+    margin-right: 25px;
+}
+
+.top__header-text {
+    width: 218px;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.top__header-contact {
+    font-size: 18px;
+    text-align: right;
+}
+
+.contact__work-status {
+    position: relative;
+}
+
+.contact__work-status-indicator {
+    position: absolute;
+    left: 58px;
+    top: 0;
+    width: 10px;
+}
+
+.contact__work-status-indicator img {
+    width: 100%;
+}
+
+.top__header-contact a {
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 30px;
+}
+
+/*About*/
+
+.about__main-title {
+    font-size: 45px;
+    font-weight: 700;
+    width: 806px;
+    margin-bottom: 55px;
+}
+
+.about__main-title span {
+    color: #FF6A05;
+}
+
+.about__services {
+    position: relative;
+}
+
+.about__services-title {
+    font-size: 33px;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+
+.about__services-wrapper {
+    position: relative;
+}
+
+.about__services-desc {
+    width: 510px;
+}
+
+.about__services-list-wrapper {
+    display: flex;
+    align-items: end;
+    justify-content: space-evenly;
+}
+
+.about__services-desc-list {
+    position: relative;
+}
+
+.about__services-desc-list:before {
+    content: '';
+    width: 76px;
+    height: 40px;
+    background-image: url('../images/arrow.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: -50px;
+    left: -48px;
+}
+
+.about__services-desc-list-title {
+    font-size: 17px;
+    margin-bottom: 38px;
+    font-weight: 600;
+}
+
+.about__services-desc-list-text li {
+    position: relative;
+    margin-bottom: 27px;
+    font-size: 14px;
+    padding-left: 30px;
+}
+
+.about__services-desc-list-text li:before {
+    content: '';
+    width: 17px;
+    height: 17px;
+    border: 1px solid #FFC804;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.about__services-desc-list-text li:after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 9px;
+    border-right: 1px solid #FFC804;
+    border-bottom: 1px solid #FFC804;
+    left: 6px;
+    top: 3px;
+    transform: rotate(45deg);
+}
+
+.about__services-desc-list {
+    width: 308px;
+}
+
+.about__services-desc-img {
+    width: 147px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.about__services-desc-img:before {
+    content: '';
+    width: 84px;
+    height: 66px;
+    background-image: url("../images/label.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: -26px;
+    left: -35px;
+    z-index: 10;
+}
+
+.about__services-desc-image-large {
+    position: absolute;
+    right: 0;
+    top: -108px;
+    width: 700px;
+}
+
+.about__services-offer {
+    width: 390px;
+    margin-top: 44px;
+    margin-bottom: 41px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #FF5F04;
+}
+
+.about__services-offer p {
+    animation: animatingOffer 2s infinite linear;
+}
+
+@keyframes animatingOffer {
+    0% {
+        text-shadow: none;
+    }
+
+    50% {
+        text-shadow: 0 0 5px #FFFFFF,
+        0 0 10px #FF9900,
+        0 0 15px #FFFFFF,
+        0 0 20px #FF9900,
+        0 0 30px #FF9900,
+        0 0 40px #FF9900
+    }
+
+    100% {
+        text-shadow: none;
+    }
+}
+
+.about__services-offer p span {
+    font-weight: 900;
+}
+
+.about__services-text {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 36px;
+}
+
+.about__services-text span {
+    color: #FF5F04;
+    font-weight: 700;
+}
+
+.about__services-btn button {
+    display: block;
+    background: linear-gradient(180deg, #FFAA04 0%, #FF5F04 100%);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    border-radius: 60px;
+    width: 295px;
+    color: #ffffff;
+    text-align: center;
+    padding: 11px 0;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.about__services-btn button p:first-child {
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.about__services-label {
+    width: 205px;
+    position: relative;
+    left: 493px;
+    bottom: 164px;
+}
+
+.about__services-label:before {
+    content: '';
+    width: 131px;
+    height: 65px;
+    background-image: url(../images/arrow-2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 101px;
+    right: 225px;
+}
+
+/*Inner Page*/
+
+.inner__page {
+    width: 100%;
+    background-color: #F6F3ED;
+    padding: 90px;
+    background-image: url("../images/bgr-white.png");
+    background-position: center 65%;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+}
+
+.inner__page-text {
+    text-align: center;
+    width: 560px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.inner__page-text span{
+    font-weight: 600;
+}
+
+.inner__page-main {
+    width: 592px;
+    height: 46px;
+    background-color: #ffffff;
+    position: relative;
+    margin: 34px auto 81px;
+    border-radius: 80px;
+    overflow: hidden;
+}
+
+.inner__page-btn {
+    padding: 17px 22px;
+    text-align: center;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #FF5F04;
+    color: #FF5F04;
+    font-size: 20px;
+}
+
+.inner__page-btn:hover {
+    background: #FF5F04;
+    color: #ffffff;
+}
+
+.inner__page-main-inner {
+    max-width: 0;
+    height: 100%;
+    overflow: hidden;
+    background: #FF5F04;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transition: max-width 0.3s ease;
+    border-radius: inherit;
+    border: 6px solid #ffffff;
+}
+
+.inner__page-main-inner:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(-45deg,
+    hsla(0, 0%, 100%, 0) 34%, #ff0000 0, #ff0000 50%,
+    hsla(0, 0%, 100%, 0) 0,
+    hsla(0, 0%, 100%, 0) 85%, #ff0000 0, #ff0000);
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: c 2s linear infinite;
+    -webkit-background-size: 20px 20px;
+}
+
+@keyframes c {
+    0% {
+        background-position: 20px 0
+    }
+
+    to {
+        background-position: 0 0
+    }
+}
+
+.inner__page-main-inner-text {
+    position: relative;
+    display: block;
+    z-index: 10;
+    color: #FFFFFF;
+    line-height: 34px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: right 0.3s linear;
+    width: 85px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.inner__page-progress {
+    text-align: center;
+}
+
+.inner__page-calc-title {
+    text-align: center;
+    font-size: 27px;
+    font-weight: 700;
+    margin: 81px 0;
+}
+
+.inner__page-calc-img {
+    width: 377px;
+    height: 560px;
+    background-size: contain;
+    background-position: 6px 0;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 30px;
+}
+
+.inner__page-card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.inner__page-calc-cont {
+    width: 65%;
+    position: relative;
+    left: 23%;
+}
+
+.inner__page-calc-cont-title {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.inner__page-calc-cont-list {
+    font-size: 20px;
+}
+
+.inner__page-calc-cont-list ul li {
+    margin-bottom: 19px;
+    position: relative;
+    padding-left: 40px;
+}
+
+.inner__page-calc-cont-list small {
+    font-size: 15px;
+}
+
+.inner__page-calc-cont-list ul li input:checked + label {
+    font-weight: 700;
+}
+
+.inner__page-calc-cont-list ul li input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.inner__page-calc-cont-list ul li label:before {
+    content: '';
+    width: 28px;
+    height: 28px;
+    border: 1px solid #F26E04;
+    position: absolute;
+    top: -4px;
+    left: 0;
+    border-radius: 50%;
+}
+
+.inner__page-calc-cont-list ul li input:checked + label:after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #F26E04;
+    position: absolute;
+    left: 7px;
+    top: 3px;
+    display: block;
+}
+
+.inner__page-calc-cont-list p {
+    width: 306px;
+    font-size: 15px;
+    margin-left: 41px;
+}
+
+.inner__page-calc-card-title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    background: #FFC804;
+    padding: 14px 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: relative;
+    top: 18px;
+}
+
+.inner__page-calc-card-title:before {
+    content: '';
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    top: -43px;
+    right: -46px;
+    background-image: url(../images/label-3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.inner__page-calc-card-img {
+    height: 175px;
+    background-image: url('../images/pic-2.jpg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.inner__page-calc-card-text {
+    background: #FF7905;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.gift-wrapper {
+    background: #ffffff;
+    color: #FF7905;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: left;
+    position: relative;
+    margin: 12px 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.gift-text {
+    padding-left: 35px;
+    width: 250px;
+    font-size: 14px;
+}
+
+.gift-text span {
+    font-weight: 700;
+}
+
+.gift-icon {
+    position: absolute;
+    top: 9px;
+    left: 6px;
+    width: 29px;
+}
+
+#calc-card-text-title {
+    font-size: 20px;
+}
+
+.inner__page-calc-card-gift-text {
+    font-size: 14px;
+    width: 202px;
+    margin: 0 auto;
+}
+
+.inner__page-calc-card {
+    text-align: center;
+    position: relative;
+    right: 3%;
+}
+
+.inner__page-calc-card p {
+    width: 202px;
+    margin: 15px auto 0;
+    font-size: 12px;
+}
+
+
+.percent {
+    position: absolute;
+    top: 37%;
+    left: 32%;
+    font-size: 22px;
+    font-weight: 700;
+    width: 40px;
+    text-align: center;
+    color: #FF7905;
+}
+
+.progress-ring-wrapper {
+    width: 104px;
+    height: 104px;
+    margin: 30px 41%;
+    display: block;
+    position: relative;
+}
+
+.progress-ring {
+    width: 100%;
+    height: 100%;
+}
+
+.progress-ring-wrapper:before {
+    content: '';
+    position: absolute;
+    left: 37%;
+    top: 37%;
+    width: 29px;
+    height: 24px;
+    background-image: url('../images/check.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: none;
+}
+
+.show-mark:before {
+    content: '';
+    display: block;
+}
+
+.progress-ring__circle, .progress-ring__circle-start {
+    stroke: #FFC804;
+    stroke-width: 9px;
+    fill: transparent;
+    transform-origin: center;
+    transform: rotate(-90deg);
+    transition: stroke-dashoffset 0.3s;
+    background-color: transparent;
+}
+
+.progress-ring__circle-start {
+    stroke: #FF7905;
+    stroke-dasharray: 100% 0;
+}
+
+.btn {
+    width: 353px;
+    height: 72px;
+    background: linear-gradient(180deg, #FFAA04 0%, #FF5F04 100%);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+    border-radius: 60px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+
+}
+
+.inner__page-calc-cont-phone {
+    width: 353px;
+    height: 64px;
+    margin: 60px -40px 27px;
+}
+
+.inner__page-calc-cont-btn {
+    margin: 0 -40px;
+}
+
+.inner__page-calc-cont-btn button {
+    position: relative;
+    cursor: pointer;
+}
+
+.inner__page-calc-cont-btn button:before {
+    content: '';
+    position: absolute;
+    top: 31px;
+    right: -90px;
+    width: 75px;
+    height: 95px;
+    background-image: url(../images/arrow-3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.inner__page-calc-cont-phone input {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 60px;
+    font-size: 18px;
+    border: 1px solid #FF5F04;
+}
+
+.inner__page-calc-cont-phone input:focus {
+    outline: none;
+}
+
+.result_text {
+    width: 545px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.result_text span{
+    font-weight: 600;
+}
+
+.inner__page-copy {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-top: 6%;
+    color: #C1B9B9;
+}
+
+.inner__page-copy a:first-child {
+    text-transform: uppercase;
+}
+
+.inner__page-copy a {
+    color: #C1B9B9;
+}
+
+.second__page {
+    position: relative;
+    animation: animatePage 2s infinite linear;
+    transition: bottom 3s linear;
+    opacity: 50%;
+}
+
+@keyframes animatePage {
+    0% {
+        bottom: -100px;
+    }
+
+    50% {
+        bottom: 0;
+    }
+
+    100% {
+        bottom: -100px;
+    }
+}
+
+.second__page .inner__page-text {
+    font-size: 40px;
+    font-weight: 700;
+    opacity: 22%;
+    width: 963px;
+}
+
+.second__page-text-wrapper {
+    position: relative;
+}
+
+.second__page-text-icon {
+    width: 44px;
+    position: absolute;
+    top: -19px;
+    left: 45px;
+}
